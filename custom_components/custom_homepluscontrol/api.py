@@ -1,5 +1,5 @@
 """API for Legrand Home+ Control bound to Home Assistant OAuth."""
-from homepluscontrol.homeplusapi import HomePlusControlAPI
+from .homepluscontrol.homeplusapi import HomePlusControlAPI
 
 from homeassistant import config_entries, core
 from homeassistant.helpers import aiohttp_client, config_entry_oauth2_flow

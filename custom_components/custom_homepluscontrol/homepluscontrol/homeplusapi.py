@@ -3,8 +3,6 @@ import logging
 
 import time
 
-from homepluscontrol.homeplusautomation import HomePlusAutomation
-
 from .authentication import AbstractHomePlusOAuth2Async
 from .homeplusplant import HomePlusPlant, PLANT_TOPOLOGY_BASE_URL
 from .homeplusinteractivemodule import HomePlusInteractiveModule
