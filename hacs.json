@@ -1,5 +1,5 @@
 {
-  	"name": "Custom Tado°",
+  	"name": "Custom Home+ Control",
 	"render_readme": true,
-	"domain": ["climate"]
+	"domain": ["cover","switch"]
 }
