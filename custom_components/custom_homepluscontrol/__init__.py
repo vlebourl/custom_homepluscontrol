@@ -4,7 +4,7 @@ from datetime import timedelta
 import logging
 
 import async_timeout
-from .homepluscontrol.homeplusapi import HomePlusControlApiError
+from homepluscontrol.homeplusapi import HomePlusControlApiError
 import voluptuous as vol
 
 from homeassistant.config_entries import ConfigEntry
