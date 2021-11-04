@@ -29,7 +29,6 @@ repos:
           - flake8-docstrings==1.5.0
           - pydocstyle==5.1.1
         files: ^(custom_components)/.+\.py$
-        exclude: ^(custom_components)/custom_homepluscontrol/homepluscontrol
   - repo: https://github.com/PyCQA/isort
     rev: 5.8.0
     hooks:
