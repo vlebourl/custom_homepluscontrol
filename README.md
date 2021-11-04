@@ -22,3 +22,14 @@ Reboot Home Assistant and configure the 'Legrand Home+ Control' integration via 
 Copy the `custom_components/custom_homepluscontrol` to your `custom_components` folder. Reboot Home Assistant and configure the 'Legrand Home+ Control' integration via the integrations page or press the blue button below.
 
 [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=home_plus_control)
+
+### Enable debug logging
+
+The [logger](https://www.home-assistant.io/integrations/logger/) integration lets you define the level of logging activities in Home Assistant. Turning on debug mode will show more information in your logbook.
+
+```yaml
+logger:
+  default: critical
+  logs:
+    custom_components.home_plus_control: debug
+```
