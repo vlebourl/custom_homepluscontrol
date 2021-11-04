@@ -1,3 +1,7 @@
+[![Linters (flake8, black, isort)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/linters.yml/badge.svg)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/linters.yml)
+[![Validate](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/validate.yml/badge.svg)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/validate.yml)
+[![Validate with hassfest](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/hassfest.yml/badge.svg)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/hassfest.yml)
+
 # Custom version of Home Plus Control integration for Home Assistant
 
 ## Installation
