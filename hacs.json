@@ -1,5 +1,5 @@
 {
-  	"name": "Custom Home+ Control",
-	"render_readme": true,
-	"domain": ["cover","switch"]
+  "name": "Custom Legrand Home+ Control",
+  "render_readme": true,
+  "domain": ["cover", "switch"]
 }
