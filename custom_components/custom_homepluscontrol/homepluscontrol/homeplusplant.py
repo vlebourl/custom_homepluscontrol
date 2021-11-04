@@ -4,11 +4,11 @@ import logging
 import aiohttp
 
 from .authentication import AbstractHomePlusOAuth2Async
+from .homeplusautomation import HomePlusAutomation
 from .homepluslight import HomePlusLight
 from .homeplusmodule import HomePlusModule
 from .homeplusplug import HomePlusPlug
 from .homeplusremote import HomePlusRemote
-from .homeplusautomation import HomePlusAutomation
 
 PLANT_TOPOLOGY_BASE_URL = "https://api.developer.legrand.com/hc/api/v1.0/plants/"
 """ API endpoint for the Home+ plant information. """
@@ -55,7 +55,7 @@ class HomePlusPlant:
         self.module_status = json.loads('{"modules": { } }')
 
     def __str__(self):
-        """ Return the string representing this plant """
+        """Return the string representing this plant"""
         return f"Home+ Plant: name->{self.name}, id->{self.id}, country->{self.country}"
 
     @property

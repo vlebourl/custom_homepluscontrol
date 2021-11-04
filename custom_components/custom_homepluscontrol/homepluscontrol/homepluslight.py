@@ -30,5 +30,5 @@ class HomePlusLight(HomePlusInteractiveModule):
         self.build_status_url(HomePlusLight.MODULE_BASE_URL)
 
     def __str__(self):
-        """ Return the string representing this module """
+        """Return the string representing this module"""
         return f"Home+ Light: device->{self.device}, name->{self.name}, id->{self.id}, reachable->{self.reachable}, status->{self.status}"

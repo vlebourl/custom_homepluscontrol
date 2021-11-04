@@ -13,7 +13,7 @@ class HomePlusModule:
         name (str): Name of the module
         hw_type (str): Hardware type(?) of the module (NLP, NLT, NLF)
         device (str): Type of the device (plug, light, remote)
-        fw (str, optional): Firware(?) of the module. Defaults to an empty string.
+        fw (str, optional): Firmware(?) of the module. Defaults to an empty string.
         type (str, optional): Additional type information of the module. Defaults to an empty string.
         reachable (bool, optional): True if the module is reachable and False if it is not. Defaults to False.
         statusUrl (str): URL of the API endpoint that returns the status of the module
@@ -46,12 +46,12 @@ class HomePlusModule:
         self.build_status_url("")
 
     def __str__(self):
-        """ Return the string representing this module """
+        """Return the string representing this module"""
         return f"Home+ Module: device->{self.device}, name->{self.name}, id->{self.id}, reachable->{self.reachable}"
 
     @property
     def logger(self):
-        """ Return logger of the Home+ Control Module """
+        """Return logger of the Home+ Control Module"""
         return logging.getLogger(__name__)
 
     def build_status_url(self, base_url):
@@ -86,9 +86,7 @@ class HomePlusModule:
         try:
             response = await oauth_client.get_request(self.statusUrl)
         except aiohttp.ClientResponseError:
-            self.logger.error(
-                "HTTP client response error when update module status"
-            )
+            self.logger.error("HTTP client response error when update module status")
         else:
             status_result = await response.json()
             module_key = list(status_result)[0]

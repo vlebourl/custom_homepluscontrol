@@ -4,9 +4,6 @@ from datetime import timedelta
 import logging
 
 import async_timeout
-from homepluscontrol.homeplusapi import HomePlusControlApiError
-import voluptuous as vol
-
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_CLIENT_ID, CONF_CLIENT_SECRET
 from homeassistant.core import HomeAssistant
@@ -17,6 +14,8 @@ from homeassistant.helpers import (
 )
 from homeassistant.helpers.device_registry import async_get as async_get_device_registry
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
+from homepluscontrol.homeplusapi import HomePlusControlApiError
+import voluptuous as vol
 
 from . import config_flow, helpers
 from .api import HomePlusControlAsyncApi

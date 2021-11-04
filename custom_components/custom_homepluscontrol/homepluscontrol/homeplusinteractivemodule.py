@@ -43,7 +43,7 @@ class HomePlusInteractiveModule(HomePlusModule):
         self.power = 0
 
     def __str__(self):
-        """ Return the string representing this module """
+        """Return the string representing this module"""
         return f"Home+ Interactive Module: device->{self.device}, name->{self.name}, id->{self.id}, reachable->{self.reachable}, status->{self.status}"
 
     def update_state(self, module_data):
@@ -57,12 +57,12 @@ class HomePlusInteractiveModule(HomePlusModule):
         self.power = int(module_data["consumptions"][0]["value"])
 
     async def turn_on(self):
-        """ Turn on this interactive module """
+        """Turn on this interactive module"""
         if await self.post_status_update(HomePlusInteractiveModule.STATUS_ON):
             self.status = "on"
 
     async def turn_off(self):
-        """ Turn off this interactive module """
+        """Turn off this interactive module"""
         if await self.post_status_update(HomePlusInteractiveModule.STATUS_OFF):
             self.status = "off"
 
@@ -89,13 +89,9 @@ class HomePlusInteractiveModule(HomePlusModule):
         oauth_client = self.plant.oauth_client
         update_status_result = False
         try:
-            await oauth_client.post_request(
-                self.statusUrl, data=desired_end_status
-            )
+            await oauth_client.post_request(self.statusUrl, data=desired_end_status)
         except aiohttp.ClientResponseError:
-            self.logger.error(
-                "HTTP client response error when posting module status"
-            )
+            self.logger.error("HTTP client response error when posting module status")
         else:
             update_status_result = True
         return update_status_result
