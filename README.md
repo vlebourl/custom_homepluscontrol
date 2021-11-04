@@ -11,7 +11,7 @@ You can install this integration via [HACS](#hacs) or [manually](#manual).
 ### HACS
 
 This integration is installable through HACS.
-Add this repository to HACS custom repositories [see here](https://hacs.xyz/docs/faq/custom_repositories).
+Add this repository to HACS custom repositories [(see here)](https://hacs.xyz/docs/faq/custom_repositories).
 Install the Repository.
 Reboot Home Assistant and configure the 'Legrand Home+ Control' integration via the integrations page or press the blue button below.
 
