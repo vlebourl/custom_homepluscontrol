@@ -32,4 +32,5 @@ logger:
   default: critical
   logs:
     custom_components.home_plus_control: debug
+    homepluscontrol: debug
 ```
