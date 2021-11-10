@@ -8,6 +8,8 @@ tasks:
       echo "source /workspace/custom_homepluscontrol/.venv/bin/activate" >> ~/.bashrc
       source /workspace/custom_homepluscontrol/.venv/bin/activate
       pip3 install -r requirements_dev.txt
+      mkdir /workspace/custom_homepluscontrol/.config
+      ln -s /workspace/custom_homepluscontrol/custom_components /workspace/custom_homepluscontrol/.config/.
 ports:
   - port: 8123
     onOpen: notify
