@@ -9,7 +9,7 @@ tasks:
       source /workspace/custom_homepluscontrol/.venv/bin/activate
       pip3 install -r requirements_dev.txt
 ports:
-  - port: 9123
+  - port: 8123
     onOpen: notify
 github:
   prebuilds:
