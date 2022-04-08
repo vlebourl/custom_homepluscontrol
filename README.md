@@ -1,3 +1,7 @@
+This repository is now archived as Legrand api will be discontinued and integrated into the Netatmo api.
+[Netatmo custom component](https://github.com/cgtobi/netatmo_custom) and later Netatmo core component will support Legrand devices.
+
+
 [![Linters (flake8, black, isort)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/linters.yml/badge.svg)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/linters.yml)
 [![Validate](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/validate.yml/badge.svg)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/validate.yml)
 [![Validate with hassfest](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/hassfest.yml/badge.svg)](https://github.com/vlebourl/custom_homepluscontrol/actions/workflows/hassfest.yml)
